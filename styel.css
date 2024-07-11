@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: paleturquoise;
+}
+
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 5%;
+  width: 90%; /* Adjusted for responsiveness */
+  max-width: 35rem; /* Added max-width for larger screens */
+  margin: 2rem; /* Added margin for spacing */
+}
+
+form select,
+button,
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.75rem;
+  margin-top: 1rem; /* Added margin for spacing */
+  padding: 0.75rem; /* Increased padding for better touch targets */
+  font-size: 1rem; /* Adjusted font size for readability */
+}
+
+form input {
+  border: 1px solid lightgrey; /* Fixed typo from 'from' to 'form' */
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+button {
+  height: 3rem;
+  background: rgb(233, 143, 173);
+  color: #fff;
+  font-size: 1.2rem; /* Adjusted font size for responsiveness */
+  cursor: pointer;
+  font-style: italic;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem; /* Adjusted padding for smaller screens */
+  }
+
+  form select,
+  button,
+  input {
+    font-size: 0.9rem; /* Reduced font size for smaller screens */
+  }
+}
